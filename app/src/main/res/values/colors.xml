@@ -5,6 +5,9 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="lightYellow">#F1DF45</color>
     <color name="lightOrange">#F19D82</color>
+    <color name="red">#EF0000</color>
     <color name="lightGreen">#A4EA53</color>
+    <color name="startColor">#0D43E3</color>
+    <color name="endColor">#9BB8F1</color>
 
 </resources>

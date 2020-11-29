@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">swipeableLayout</string>
+    <string name="app_name">Scheduler</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="in_progress_btn">In Progress</string>
+    <string name="done_btn">Done</string>
+    <string name="to_do_btn">To do</string>
+
 </resources>

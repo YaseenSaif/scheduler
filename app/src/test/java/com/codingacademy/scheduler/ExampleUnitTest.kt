@@ -1,4 +1,4 @@
-package com.codingacademy.swipeablelayout
+package com.codingacademy.scheduler
 
 import org.junit.Test
 
