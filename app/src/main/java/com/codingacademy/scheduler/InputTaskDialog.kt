@@ -54,7 +54,6 @@ class InputTaskDialog : DialogFragment(), DatePickerFragment.Callbacks {
 
     interface Callbacks {
         fun onTaskAdd(task: Task)
-        fun onStudentDelete(position: Int)
     }
 
     private fun updateUI() {

@@ -112,14 +112,21 @@ class GeneralFragment : Fragment(),InputTaskDialog.Callbacks {
         private var dateField: TextView = itemView.findViewById(R.id.task_date)
         private var button1: Button = itemView.findViewById(R.id.button_1)
         private var button2: Button = itemView.findViewById(R.id.button_2)
+        fun getDays(daysAgo: Int): Date {
+            val calendar = Calendar.getInstance()
+            calendar.add(Calendar.DAY_OF_YEAR, daysAgo)
 
+            return calendar.time
+        }
         fun checkTaskStatus() {
 
             if (param1 == 0) {
                 if(task.deadline.time < Date().time){
                 this.itemView.setBackgroundResource(R.color.red)
                 }
-
+                else if (getDays(3) > task.deadline){
+                    this.itemView.setBackgroundResource(R.color.lightOrange)
+                }
                 this.button2.setText(R.string.done_btn)
                 this.button1.setText(R.string.in_progress_btn)
             } else if (param1 == 1) {
@@ -202,7 +209,4 @@ class GeneralFragment : Fragment(),InputTaskDialog.Callbacks {
         taskDetailViewModel.addTask(task)
     }
 
-    override fun onStudentDelete(position: Int) {
-
-    }
 }
